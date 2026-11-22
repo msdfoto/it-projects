@@ -6,7 +6,7 @@ A Windows desktop app that tracks every repair-order (RO) recommendation in a lu
 
 | | |
 |---|---|
-| **Users** | Service advisors and management at a Jaguar Land Rover dealership |
+| **Users** | Service advisors and management at a Land Rover dealership |
 | **Stack** | Python, Flask, PyWebView, SQLite, vanilla JavaScript single-page UI |
 | **Scale** | 2,000+ repair orders tracked; versioned releases v1.0 → v1.9 |
 | **Built with** | AI-assisted development (Claude). I own the requirements, design, test acceptance and rollout. |

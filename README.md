@@ -9,6 +9,7 @@ By day I'm the Service Innovation & Analytics Lead in a luxury automotive servic
 | Project | What it is | Stack | Status |
 |---|---|---|---|
 | [**Pitlane**](projects/pitlane/README.md) | Desktop app that tracks every repair-order recommendation and each service advisor's close rate. Replaced a manual Excel process and is used daily by a dealership service team. | Python · Flask · PyWebView · SQLite · JavaScript | In production · v1.9 |
+| [**Spectre**](projects/spectre/README.md) | Platform for my web design studio: scores a business's website, benchmarks competitors, prices the job, and generates contracts and invoices. | Node.js · Express · SQLite · Claude API | In active use · v5.0 |
 | [**Homelab Server**](projects/homelab-server/README.md) | Two-node home server: network-wide DNS filtering and DHCP, a self-hosted media platform behind a VPN kill switch, zero-trust remote access, and automated patching with rollback. | Ubuntu Server · Docker · Pi-hole · NetBird · Bash | Active · Phase 2 of 4 |
 
 ## Skills across projects
@@ -17,12 +18,13 @@ By day I'm the Service Innovation & Analytics Lead in a luxury automotive servic
 |---|---|
 | **Linux administration** | Ubuntu Server, systemd services and timers, netplan, sudoers, journald (Homelab) |
 | **Networking** | DHCP/DNS design, static addressing, routing, IPv6 leak closure, WireGuard mesh VPN (Homelab) |
-| **Security** | Key-only SSH, least-privilege sudo, UFW, fail2ban, SSO reverse proxy, bcrypt auth (Homelab, Pitlane) |
+| **Security** | Key-only SSH, least-privilege sudo, UFW, fail2ban, SSO reverse proxy, bcrypt auth, CORS and injection fixes (Homelab, Pitlane, Spectre) |
 | **Containers** | Docker, Compose, 12+ services, VPN-routed containers, health checks and rollback (Homelab) |
-| **Software development** | Python/Flask backend, vanilla JS single-page app, SQLite, PDF/CSV reporting (Pitlane) |
+| **Software development** | Python/Flask and Node/Express backends, vanilla JS front ends, SQLite, PDF/CSV generation (Pitlane, Spectre) |
+| **AI integration** | LLM-powered site analysis with deterministic, server-side money math (Spectre) |
 | **Automation** | Bash and PowerShell tooling, scheduled jobs, idempotent setup scripts (Homelab) |
-| **Testing & release** | Regression tests against production data copies, versioned update packs that never touch user data (Pitlane) |
-| **Data analysis** | Close-rate analysis that changed a department's follow-up process (Pitlane) |
+| **Testing & release** | Regression tests on copies of production data, end-to-end and mutation testing, upgrades that never touch user data (Pitlane, Spectre) |
+| **Data analysis** | Close-rate analysis that changed a department's follow-up process (Pitlane); website scoring for SEO, performance and accessibility (Spectre) |
 
 ## How these are documented
 
