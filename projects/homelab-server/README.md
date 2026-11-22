@@ -8,13 +8,13 @@ A headless, two-node home server that protects every device on my network, strea
 |---|---|
 | **Hardware** | Dell OptiPlex 7080 Micro (i5-10500T, 32 GB, 1 TB NVMe) + Dell OptiPlex 3000 SFF |
 | **OS** | Ubuntu Server 26.04 LTS on both nodes |
-| **Core stack** | Docker, Pi-hole, Jellyfin + Sonarr/Radarr/Prowlarr, gluetun VPN, NetBird, Cockpit |
+| **Core stack** | Docker, Pi-hole, Jellyfin, gluetun VPN gateway, NetBird, Cockpit |
 | **Automation** | Bash, PowerShell, systemd timers |
 
 ## What it does
 
 - **Protects the whole network.** Pi-hole filters ads, trackers and malware at the DNS layer for every phone, TV and laptop, with no setup on any device.
-- **Streams media.** A Jellyfin library is filled automatically by the *arr apps. All download traffic goes through a VPN container with a kill switch.
+- **Streams media.** A self-hosted Jellyfin server streams my media library to every TV, phone and PC in the house. Containers that need outbound privacy route through a VPN gateway container with a kill switch, so they have no internet access if the tunnel drops.
 - **Works securely from anywhere.** NetBird (WireGuard mesh) gives my devices the same access as at home. The media server has an SSO-protected browser link. No ports are open on the router.
 - **Looks after itself.** A nightly job patches the OS and every container, checks 30+ health points, rolls back anything that breaks, and only reboots when needed.
 
@@ -29,9 +29,8 @@ A headless, two-node home server that protects every device on my network, strea
       |                                  |
  OptiPlex 7080  (main node)         OptiPlex 3000  (worker node)
   - Pi-hole: DNS + DHCP for LAN      - extra compute
-  - Jellyfin + *arr media stack      - daily config backups
-  - gluetun VPN -> download clients  - secondary Pi-hole (planned)
-  - Piped (ad-free YouTube)
+  - Jellyfin media server            - daily config backups
+  - VPN gateway (kill switch)        - secondary Pi-hole (planned)
   - Cockpit + custom dashboard
   - NetBird routing peer
       |
@@ -65,7 +64,7 @@ Linux administration · TCP/IP, DHCP, DNS · firewalling (UFW) · WireGuard / ze
 
 ## What's next
 
-- Switch the download VPN from ProtonVPN to Mullvad
+- Switch the VPN gateway provider from ProtonVPN to Mullvad
 - Run a full security stress test of both nodes
 - Build a 10-inch mini rack with a Raspberry Pi 5, a PoE switch and a GL.iNet router, with VLANs for IoT and guest devices
 

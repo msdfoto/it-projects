@@ -2,7 +2,7 @@
 
 **Production software · April 2026 – present · v1.9, in daily use**
 
-A Windows desktop app that runs a luxury automotive service department's follow-up pipeline. It logs every repair recommended on a repair order (RO) with its labor and price, and tracks each one as Sold, Declined or Pending. It keeps pending work aged and assigned, recognizes returning vehicles by VIN so declined work can be offered again, and turns all of it into daily and month-to-date reports. I designed it, built it and support it, and the service team runs on it every day.
+A Windows desktop app that runs a Land Rover service department's follow-up pipeline. It logs every repair recommended on a repair order (RO) with its labor and price, and tracks each one as Sold, Declined or Pending. It keeps pending work aged and assigned, recognizes returning vehicles by VIN so declined work can be offered again, and turns all of it into daily and month-to-date reports. I designed it, built it and support it, and the service team runs on it every day.
 
 | | |
 |---|---|

@@ -10,7 +10,7 @@ By day I'm the Service Innovation & Analytics Lead in a Land Rover service depar
 |---|---|---|---|
 | [**Pitlane**](projects/pitlane/README.md) | Desktop app that runs a service department's follow-up pipeline: logs recommended repairs with labor and pricing, ages pending work, recognizes returning vehicles by VIN, and produces daily and month-to-date reports. Replaced a manual Excel process and is used daily by a dealership service team. | Python · Flask · PyWebView · SQLite · JavaScript | In production · v1.9 |
 | [**Spectre**](projects/spectre/README.md) | Platform for my web design studio: scores a business's website, benchmarks competitors, prices the job, and generates contracts and invoices. | Node.js · Express · SQLite · Claude API | In active use · v5.0 |
-| [**Homelab Server**](projects/homelab-server/README.md) | Two-node home server: network-wide DNS filtering and DHCP, a self-hosted media platform behind a VPN kill switch, zero-trust remote access, and automated patching with rollback. | Ubuntu Server · Docker · Pi-hole · NetBird · Bash | Active · Phase 2 of 4 |
+| [**Homelab Server**](projects/homelab-server/README.md) | Two-node home server: network-wide DNS filtering and DHCP, a self-hosted Jellyfin media server, zero-trust remote access, and automated patching with rollback. | Ubuntu Server · Docker · Pi-hole · NetBird · Bash | Active · Phase 2 of 4 |
 
 ## Skills across projects
 
