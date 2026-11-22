@@ -1,8 +1,8 @@
-# IT Projects — Matthew D.
+# IT Projects — Matt
 
 Hands-on infrastructure and software projects I've designed, built and run myself. Each one is in real, daily use.
 
-By day I'm the Service Innovation & Analytics Lead in a Land Rover service department. These projects are where I build the tools and systems behind that work, and where I practice Linux, networking, security and full-stack development.
+By day I'm the Service Innovation & Analytics Lead in a luxury automotive service department. These projects are where I build the tools and systems behind that work, and where I practice Linux, networking, security and full-stack development.
 
 ## Projects
 
